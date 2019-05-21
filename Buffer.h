@@ -24,7 +24,7 @@ public:
 
 	void insert( const item& i ) {
 		auto lower_b = std::lower_bound( _buffer.begin(), _buffer.end(), i,
-										 []( const item& x, const item& y ) { return x.second >= y.second; } );
+										[]( const item& x, const item& y ) { return x.second >= y.second; } );
 		_buffer.insert( lower_b, i );
 	}
 
